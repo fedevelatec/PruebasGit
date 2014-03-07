@@ -14,13 +14,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * http://java-buddy.blogspot.mx/search/label/JSON
  * @web http://java-buddy.blogspot.com/
  */
 public class Java_OpenWeatherMap {
 
     static final String URL_OpenWeatherMap_weather_London_uk =
-            "http://api.openweathermap.org/data/2.5/weather?q=London,uk";
+            //"http://api.openweathermap.org/data/2.5/weather?q=London,uk";
+            "http://api.openweathermap.org/data/2.5/weather?q=Mexico,mx";
 
     public static void main(String[] args) {
 
