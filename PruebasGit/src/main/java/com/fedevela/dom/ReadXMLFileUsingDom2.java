@@ -8,6 +8,10 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+/**
+ * http://examples.javacodegeeks.com/core-java/xml/parsers/documentbuilderfactory/read-xml-file-in-java-using-dom-parser-example/
+ */
+
 public class ReadXMLFileUsingDom2 {
 
     public static final String xmlFilePath = "src/main/java/com/fedevela/dom/testFile.xml";
