@@ -4,7 +4,40 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="helloWorldBean" class="com.fedevela.spring.HelloWorld"
-          scope="singleton">
+          scope="prototype">
+    </bean>
+
+    <bean id="helloWorldBeanList" class="com.fedevela.spring.HelloWorldList">
+        <property name="list">
+            <list>
+                <value>1</value>
+                <ref bean="personBean" />
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>setvalue1</value>
+                <ref bean="personBean" />
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="1" value="value1" />
+                <entry key="2" value-ref="personBean" />
+            </map>
+        </property>
+        <property name="props">
+            <props>
+                <prop key="key1">1000</prop>
+                <prop key="key2">2000</prop>
+                <prop key="key3">3000</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="personBean" class="com.fedevela.spring.Person">
+        <property name="name" value="John"/>
+        <property name="id" value="12345"/>
     </bean>
 
 </beans>
