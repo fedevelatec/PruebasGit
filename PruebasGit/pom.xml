@@ -5,13 +5,25 @@
 	<groupId>com.fedevela</groupId>
 	<artifactId>PruebasGit</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>11</source>
+					<target>11</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 	<packaging>jar</packaging>
 	<name>PruebasGit</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>3.0.5.RELEASE</spring.version>
+		<spring.version>5.3.7</spring.version>
 		<org.slf4j.version>1.6.4</org.slf4j.version>
 	</properties>
 
@@ -39,28 +51,19 @@
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-core</artifactId>
-			<version>${spring.version}</version>
+			<version>5.5.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
-			<version>${spring.version}</version>
+			<version>5.5.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>javafx</artifactId>
-			<version>2.0</version>
-			<scope>system</scope>
-			<!-- Aqui va la direccion de donde se encuentra instalado el JavaFx -->
-			<systemPath>C:/Program Files/Java/jre7/lib/jfxrt.jar</systemPath>
+			<version>5.5.0</version>
 		</dependency>
 
 		<dependency>
