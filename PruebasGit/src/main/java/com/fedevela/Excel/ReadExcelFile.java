@@ -61,29 +61,29 @@ public class ReadExcelFile {
             System.out.println("Start getting rows");
             for (int j = 0; j < cellStoreVector.size(); j++) {
                 HSSFCell myCell = (HSSFCell) cellStoreVector.elementAt(j);
-                System.out.println((new StringBuilder()).append("reading column no -").append(myCell.getCellNum()).toString());
+                System.out.println((new StringBuilder()).append("reading column no -").append(myCell.getNumericCellValue()).toString());
                 String stringCellValue = "";
-                if (myCell.getCellNum() == 0)//1st column is string based cell
+                if (myCell.getNumericCellValue() == 0)//1st column is string based cell
                 {
                     stringCellValue = String.valueOf(myCell.getStringCellValue());
                 }
-                if (myCell.getCellNum() == 1)//2nd column is string based cell
+                if (myCell.getNumericCellValue() == 1)//2nd column is string based cell
                 {
                     stringCellValue = String.valueOf(myCell.getStringCellValue());
                 }
-                if (myCell.getCellNum() == 2)//3rd column is string based cell
+                if (myCell.getNumericCellValue() == 2)//3rd column is string based cell
                 {
                     stringCellValue = String.valueOf(myCell.getStringCellValue());
                 }
-                if (myCell.getCellNum() == 3)//4th column is string based cell
+                if (myCell.getNumericCellValue() == 3)//4th column is string based cell
                 {
                     stringCellValue = String.valueOf(myCell.getStringCellValue());
                 }
-                if (myCell.getCellNum() == 4)//5th column is Number based cell
+                if (myCell.getNumericCellValue() == 4)//5th column is Number based cell
                 {
                     stringCellValue = String.valueOf(myCell.getNumericCellValue());
                 }
-                if (myCell.getCellNum() == 5)//6th column is string based cell
+                if (myCell.getNumericCellValue() == 5)//6th column is string based cell
                 {
                     stringCellValue = String.valueOf(myCell.getStringCellValue());
                 }
